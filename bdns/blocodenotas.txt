@@ -1,0 +1,11 @@
+CORES:
+--Cor-primária: #F7F7F7;
+--Cor-secundaria: #FD5521;
+--Cor-terciario: #000000;
+
+FONTES:
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Open+Sans:ital,wdth,wght@1,75..100,300..800&display=swap');
+</style>
+--Fonte-principal: "Archivo Black";
+--Fonte-conteudo: "Opens Sans";

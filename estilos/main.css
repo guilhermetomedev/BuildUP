@@ -166,9 +166,9 @@ div.contenttitle {
 
 div.contenttitle > h1, h2{
   color: white;
-  font: normal normal 4em var(--Fonte-principal);
+  font: normal normal 3em var(--Fonte-principal);
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.336);
-  padding: 0 0 1rem 2rem;
+  padding: 0 0 1rem 5vw;
 }    
 
 div.contenttitle > h2{
@@ -181,17 +181,20 @@ div.contentbotton {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-evenly;
+  align-items: flex-start;
   width: 100%;
+  height: 50%;
+  margin-top: 10%;
 }
 
 div#verprojetos > a {
   background-color: #FD5521;
-  padding: 1.5rem 3rem;
+  padding: 1.5rem 2rem;
   color: black;
 }
 
 div#contatar > a {
   border: 2px solid white;
   color: white;
-  padding: 1.5rem 4rem;
+  padding: 1.5rem 2.5rem;
 }

@@ -3,16 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="estilos/main.css"/>
-    <link rel="stylesheet" href="estilos/responsive.css">
+    <link rel="stylesheet" href="estilos/main.css" />
+    <link rel="stylesheet" href="estilos/responsive.css" />
     <link rel="shortcut icon" href="icones/buildup.ico" type="image/x-icon" />
     <title>BuildUP</title>
-    <script src="https://kit.fontawesome.com/fd249ef772.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/fd249ef772.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body onresize="mudouTamanho()">
     <header>
       <div class="bottonconstruction">
-        <a href="#">BuildUP<p>Construções</p></a>
+        <a href="#"
+          >BuildUP
+          <p>Construções</p></a
+        >
       </div>
       <nav class="menu" id="menu">
         <ul>
@@ -24,87 +30,52 @@
           <li><a href="#" rel="next" id="ligar">Ligar</a></li>
         </ul>
       </nav>
-          <div class="menubtn" id="menubtn" onclick="clickNav()">
-              <div class="bar"></div>
-              <div class="bar"></div>
-              <div class="bar"></div>
-          </div>
+      <div class="menubtn" id="menubtn" onclick="clickNav()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
       <div class="contenttitle">
         <h1>Construindo um futuro concreto</h1>
         <h2>Criando um mundo melhor desde 1968</h2>
       </div>
       <div class="contentbotton">
-        <div class="botton" id="verprojetos"><a href="#" rel="next">Ver projetos</a></div>
-        <div class="botton" id="contatar"><a href="#" rel="next">Contatar</a></div>
+        <div class="botton" id="verprojetos">
+          <a href="#" rel="next">Ver projetos</a>
+        </div>
+        <div class="botton" id="contatar">
+          <a href="#" rel="next">Contatar</a>
+        </div>
       </div>
     </header>
+    <main>
+      <article>
+        <h2>Construir é o nosso forte</h2> 
+        <h3>A MCR Construções faz projetos de qualidade</h3>
+        <div class="botton" id="leiamais">
+          <a href="#" rel="next">Leia mais</a>
+        </div>
+      </article>
+    </main>
   </body>
 
+  <script>
+    const menuBtn = document.getElementById("menubtn");
+    const Menu = document.getElementById("menu");
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <script>
-      const menuBtn = document.getElementById('menubtn');
-      const Menu = document.getElementById('menu');
-
-      menuBtn.addEventListener('click', () => {
-      menuBtn.classList.toggle('active');
-      sideMenu.classList.toggle('active');
+    menuBtn.addEventListener("click", () => {
+      menuBtn.classList.toggle("active");
+      sideMenu.classList.toggle("active");
     });
 
-      function clickNav() {
-        const menu =
-        document.getElementById("menu");
+    function clickNav() {
+      const menu = document.getElementById("menu");
 
-          if (menu.style.display == "block") 
-        {
-            menu.style.display = "none";
-        } else {
-          menu.style.display = "block";
-        }
+      if (menu.style.display == "block") {
+        menu.style.display = "none";
+      } else {
+        menu.style.display = "block";
       }
+    }
   </script>
 </html>

@@ -212,3 +212,42 @@ div#contatar > a:active {
   background-color: var(--Cor-secundaria);
   transition: all 0.5s ease-in-out;
 }
+
+main {
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: red;
+  height: 100vh;
+  width: 100%;
+}
+
+main > article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+  gap: 1.5rem;
+  background-color: white;
+  height: 50%;
+  padding: 1rem;
+}
+
+article > h2 {
+  color: black;
+  text-align: left;
+  font: normal 600 1.1em var(--Fonte-conteudo);
+  text-shadow: none;
+}
+
+article > h3 {
+  color: var(--Cor-secundaria);
+  font: normal 600 2em var(--Fonte-conteudo);
+  text-shadow: none;
+}
+
+div#leiamais > a{
+  background-color: #FD5521;
+  padding: 1rem 2.5rem;
+  color: black;
+}

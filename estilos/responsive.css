@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+:root {
+    /* CORES: */
+    --Cor-primária: #F7F7F7;
+    --Cor-secundaria: #FD5521;
+    --Cor-terciario: #000000;
+
+    /* FONTES: */
+    --Fonte-principal: "Archivo Black", sans-serif;
+    --Fonte-conteudo: "Opens Sans", sans-serif;
+}
+
+@media screen and (min-width: 768px) {
+
+   .menubtn {
+      display: none;
+    }
+
+  .menu {  
+    width: auto;
+    height: 60px;
+    background: transparent;
+    display: flex !important; 
+    justify-content: space-around; 
+    align-items: center;
+    border: 2px solid var(--Cor-secundaria);
+    background-color: rgba(0, 0, 0, 0.384);
+    border: 2px dashed rgb(255, 200, 47);
+  }
+
+  .menu ul {
+    display: flex; /* itens em linha */
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    border: 2px dashed rgb(255, 47, 175);
+    
+  }
+
+  .menu ul li {
+    margin: 0;
+  }
+
+  .menu ul li a {
+    color: #fff;  /* muda cor se quiser */
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 3rem;
+  }
+
+  .menu ul li a:hover {
+    background-color: white;
+    color: black;
+    transition: background-color 1s ease-out;
+  }
+
+  #ligar {
+      background-color: var(--Cor-secundaria);
+      padding: 1.5rem 5rem;
+      font-weight: 100;
+      font-size: 1em;
+      color: black;
+    }
+    
+}

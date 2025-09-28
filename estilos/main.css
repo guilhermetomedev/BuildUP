@@ -1,0 +1,197 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Open+Sans:ital,wdth,wght@1,75..100,300..800&display=swap');
+
+:root {
+    /* CORES: */
+    --Cor-primária: #F7F7F7;
+    --Cor-secundaria: #FD5521;
+    --Cor-terciario: #000000;
+
+    /* FONTES: */
+        --Fonte-principal: "Archivo Black", sans-serif;
+        --Fonte-conteudo: "Opens Sans", sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    font: normal normal 1em var(--Fonte-conteudo);
+}
+
+body, html {
+    width: 100vw;
+    height: 100vh;
+    background-color: grey;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100vw;
+  height: 100vh;
+  background: green url(../icones/caged.png) center / cover no-repeat fixed;
+  object-fit: cover;
+}
+
+/* Botão home */
+
+    div.bottonconstruction {
+      position: relative;
+      left: 5%;
+      transform: translateY(10%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba(0, 0, 0, 0.384);
+      width: 180px;
+      height: 70px;
+      border: 2px solid var(--Cor-secundaria);
+      text-align: center;
+      padding: 3rem;
+    }
+
+    div.bottonconstruction > a {
+      color: white;
+      font-weight: 600;
+      font-size: 2em;
+    }
+
+    div.bottonconstruction p {
+      color: white;
+      font-weight: 500;
+      margin-top: 5px;
+      font-size: 0.5em;
+    }
+
+/* Botão hambúrguer */
+    .menubtn {
+      position: fixed;
+      top: 5%;
+      right: 3%;
+      width: 40px;
+      height: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      cursor: pointer;
+      z-index: 1001;
+    }
+
+    .bar {
+      height: 3px;
+      width: 100%;
+      background-color: var(--Cor-secundaria);
+      border-radius: 4px;
+      transition: 0.4s;
+      transform-origin: center;
+    }
+
+/* Animação para virar X */
+    .menubtn.active .bar:nth-child(1) {
+      transform: rotate(45deg) translateY(18.6px);
+    }
+    .menubtn.active .bar:nth-child(2) {
+      opacity: 0;
+    }
+    .menubtn.active .bar:nth-child(3) {
+      transform: rotate(-45deg) translateY(-18.8px);
+    }
+
+/* Menu overlay */
+    .menu {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: var(--Cor-primária);
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      transition: opacity 0.4s ease, visibility 0.4s ease;
+      z-index: 1000;
+    }
+
+    .menu.active {
+      transform: translateY(0);
+    }
+
+    .menu ul {
+     margin-top: 10%;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      list-style: none;
+      padding: 0;
+      text-align: center;
+    }
+
+    .menu ul li {
+      margin: 20px 0;
+    }
+
+    #ligar {
+      background-color: var(--Cor-secundaria);
+      padding: 1.2rem 5rem;
+      font-weight: 100;
+      font-size: 1em;
+      color: black;
+    }
+
+    .menu ul li a {
+      color: hsl(0, 0%, 0%);
+      text-decoration: none;
+      font-size: 1.2em;
+      font-weight: 600;
+    }
+
+    .menu ul li a:active, ul li a:hover, .menu ul li a:not(#ligar):hover {
+      color: var(--Cor-secundaria);
+    }
+
+div.contenttitle {
+  margin-top: 15%;
+  width: 100%;
+  height: 50%;
+}    
+
+div.contenttitle > h1, h2{
+  color: white;
+  font: normal normal 4em var(--Fonte-principal);
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.336);
+  padding: 0 0 1rem 2rem;
+}    
+
+div.contenttitle > h2{
+  color: white;
+  font: normal 600 2em var(--Fonte-conteudo);
+  width: 400px;
+}    
+
+div.contentbotton {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+div#verprojetos > a {
+  background-color: #FD5521;
+  padding: 1.5rem 3rem;
+  color: black;
+}
+
+div#contatar > a {
+  border: 2px solid white;
+  color: white;
+  padding: 1.5rem 4rem;
+}

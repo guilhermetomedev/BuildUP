@@ -167,7 +167,7 @@ div.contenttitle {
 div.contenttitle > h1, h2{
   color: white;
   font: normal normal 3em var(--Fonte-principal);
-  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.336);
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.315);
   padding: 0 0 1rem 5vw;
 }    
 
@@ -189,12 +189,26 @@ div.contentbotton {
 
 div#verprojetos > a {
   background-color: #FD5521;
-  padding: 1.5rem 2rem;
+  padding: 1.2rem 2rem;
   color: black;
+}
+
+div#verprojetos > a:active {
+  background-color: black;
+  border: 2px solid var(--Cor-secundaria);
+  color: var(--Cor-secundaria);
+  transition: all 0.5s ease-in-out;
 }
 
 div#contatar > a {
   border: 2px solid white;
   color: white;
-  padding: 1.5rem 2.5rem;
+  padding: 1.2rem 2.5rem;
+}
+
+div#contatar > a:active {
+  border: none;
+  color: black;
+  background-color: var(--Cor-secundaria);
+  transition: all 0.5s ease-in-out;
 }

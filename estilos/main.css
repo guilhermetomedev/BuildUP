@@ -29,6 +29,7 @@ body, html {
     background-color: grey;
     scroll-behavior: smooth;
     overflow-x: hidden;
+    font: normal normal 1em var(--Fonte-conteudo);
 }
 
 header {
@@ -119,6 +120,7 @@ header {
       justify-content: center;
       transition: opacity 0.4s ease, visibility 0.4s ease;
       z-index: 1000;
+      overflow: hidden;
     }
 
     .menu.active {
@@ -133,6 +135,7 @@ header {
       list-style: none;
       padding: 0;
       text-align: center;
+      overflow: hidden;
     }
 
     .menu ul li {
@@ -164,7 +167,7 @@ div.contenttitle {
   height: 50%;
 }    
 
-div.contenttitle > h1, h2{
+div.contenttitle > h1, div.contenttitle > h2{
   color: white;
   font: normal normal 3em var(--Fonte-principal);
   text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.315);
@@ -193,24 +196,25 @@ div#verprojetos > a {
   color: black;
 }
 
-div#verprojetos > a:active {
+div#verprojetos > a:hover {
   background-color: black;
   border: 2px solid var(--Cor-secundaria);
   color: var(--Cor-secundaria);
-  transition: all 0.5s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 div#contatar > a {
   border: 2px solid white;
   color: white;
   padding: 1.2rem 2.5rem;
+  font-weight: 700;
 }
 
-div#contatar > a:active {
+div#contatar > a:hover {
   border: none;
   color: black;
   background-color: var(--Cor-secundaria);
-  transition: all 0.5s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 main {
@@ -224,16 +228,18 @@ main {
 main > article {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: flex-start;
   text-align: left;
-  gap: 1.5rem;
+  gap: 1rem;
   background-color: white;
-  height: 50%;
-  padding: 1rem;
+  height: 500px;
+  padding: 3rem 1.2rem 3rem 1.2rem;
+  padding-bottom: 3rem;
 }
 
 article > h2 {
+  align-self: flex-start;
   color: black;
   text-align: left;
   font: normal 600 1.1em var(--Fonte-conteudo);
@@ -246,8 +252,67 @@ article > h3 {
   text-shadow: none;
 }
 
+div#leiamais {
+  margin: 1rem 0 1rem 0;
+}
+
 div#leiamais > a{
   background-color: #FD5521;
-  padding: 1rem 2.5rem;
+  padding: 1.2rem 2.5rem;
   color: black;
+}
+
+
+section {
+  background-color: white;
+  width: 100%;
+  height: 100%;
+}
+
+section h2 {
+  font: italic bold 1.5em var(--Fonte-conteudo);
+  border-top: 2px solid black;
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+  max-width: 10%;
+}
+
+section p {
+  font-size: 0.9em;
+  font-weight: 200;
+  line-height: 2.5rem;
+  max-width: 450px;
+  display: block;
+  margin: auto;
+  margin-bottom: 4rem;
+}
+
+div.content {
+  height: 100%;
+  width: 100%;
+  padding: 2rem 5rem;
+  background-color: white;
+ 
+}
+/* CONFIG SECTION ="COMERCIAL"*/
+
+section#Comercial {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 92%;
+}
+
+section#Infraestrutural {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 100%;
+}
+
+.comercialimg > img, .infraestruturalimg > img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center left;
+  display: block;
+
 }

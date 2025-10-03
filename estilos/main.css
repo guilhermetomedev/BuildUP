@@ -25,8 +25,8 @@
 
 body, html {
     width: 100vw;
-    height: 100vh;
-    background-color: grey;
+    height: 100%;
+    background-color: rgb(128, 128, 128);
     scroll-behavior: smooth;
     overflow-x: hidden;
     font: normal normal 1em var(--Fonte-conteudo);
@@ -266,15 +266,14 @@ div#leiamais > a{
 section {
   background-color: white;
   width: 100%;
-  height: 100%;
+  height: 100dvh;
 }
 
 section h2 {
   font: italic bold 1.5em var(--Fonte-conteudo);
-  border-top: 2px solid black;
+  
   padding-top: 1rem;
   padding-bottom: 1.5rem;
-  max-width: 10%;
 }
 
 section p {
@@ -315,4 +314,99 @@ section#Infraestrutural {
   object-position: center left;
   display: block;
 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+section#Quemsomos {
+  min-height: 1000px;
+  width: 100vw;
+  padding: 1rem;
+  background: black url(../imagens/home/qmsomosnos.avif) center / cover no-repeat scroll;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.404)), url(../imagens/home/qmsomosnos.avif);
+}
+
+.conteinerqmsomos {
+  height: 100vh;
+  width: 100%;
+}
+
+.containertitle {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+div.containertitle > h2 {
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+div.containertitle > h3 {
+  margin: 0 0 1rem 0;
+  font-size: 1.8em;
+  color: var(--Cor-secundaria);
+  font-weight: bold;
+}
+
+div.containertitle > p {
+  margin: 0;
+  color: whitesmoke;
+}
+
+/*========== =cards ============ */
+
+div.infocontainer {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 2rem;
+}
+
+.infobox {
+  margin-top: 1rem;
+  padding-left: 1rem;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100px;
+  width: 200px;
+}
+.infobox::after {
+  content: '';
+  display: block;
+  background-color: white;
+  width: 50px;
+  height: 2px;
+}
+
+.infobox > h4 {
+  color: white;
+  font-size: 2.5em;
+  font-weight: 600;
+}
+
+.infobox > p {
+  color: white;
+  font-weight: 100;
+  margin: 0;
+  margin-bottom: 10px;
 }

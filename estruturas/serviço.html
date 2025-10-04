@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../estilos/main.css" />
+    <link rel="stylesheet" href="../estilos/responsive.css" />
+    <link rel="shortcut icon" href="../icones/buildup.ico" type="image/x-icon" />
+    <title>BuildUP - Serviço </title>
+    <script
+      src="https://kit.fontawesome.com/fd249ef772.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+        @charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Open+Sans:ital,wdth,wght@1,75..100,300..800&display=swap');
+
+:root {
+    /* CORES: */
+    --Cor-primária: #F7F7F7;
+    --Cor-secundaria: #FD5521;
+    --Cor-terciario: #000000;
+
+    /* FONTES: */
+        --Fonte-principal: "Archivo Black", sans-serif;
+        --Fonte-conteudo: "Open Sans", sans-serif;
+}
+        header {
+            background: none;
+            height: 0;
+            width: 0;
+        }
+
+        div.contenttitleservico {
+            margin-top: 15vh;
+            padding: 1rem;
+        }
+
+        .contenttitleservico > h2 {
+            font-size: 1.2em;
+            font-weight: normal;
+            padding-bottom: 5px;
+            text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.233);
+        }
+
+        .contenttitleservico > h3 {
+            font-size: 2em;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: var(--Cor-secundaria);
+        }
+
+        .contenttitleservico > p {
+            margin: 0;
+        }
+
+        main {
+            min-height: 100dvh;
+            width: 100vw;
+            border: 2px solid forestgreen;
+            flex: 1;
+        }
+
+        div.textcontent {
+            padding: 1rem 1rem 2rem 1rem;
+            text-align: left;
+            height: 100%;
+        }
+
+        div.textcontent > img {
+            max-width: 35%;
+        }
+
+        div.textcontent h2{
+            padding-top: 0;
+            font-size: 1.5em;
+        }
+
+        div.textcontent > p {
+            text-align: justify;
+            margin: 0;
+            margin: auto;
+        }
+
+        article.mediatext {
+            display: flex;
+            flex-flow: column-reverse nowrap;
+        }
+
+        div.mediaimg > img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        footer {
+            height: auto;
+        }
+    </style>
+  </head>
+  <body onresize="mudouTamanho()">
+    <header>
+      <div class="bottonconstruction">
+        <a href="#">BuildUP
+          <p>Construções</p>
+        </a>
+      </div>
+      <nav class="menu" id="menu">
+        <ul>
+          <li><a href="#" rel="next">Serviços</a></li>
+          <li><a href="#" rel="next">Projetos</a></li>
+          <li><a href="#" rel="next">Sobre</a></li>
+          <li><a href="#" rel="next">Carreiras</a></li>
+          <li><a href="#" rel="next">Contato</a></li>
+          <li><a href="#" rel="next" id="ligar">Ligar</a></li>
+        </ul>
+      </nav>
+      <div class="menubtn" id="menubtn" onclick="clickNav()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </header>
+    <main>
+        <section id="Serviço">
+            <div class="contenttitleservico">
+                <h2>Nossos serviços</h2>
+                <h3>Oferecemos vários serviços para melhor atender você</h3>
+                <p>Contamos com uma ampla variedade de serviços, desde consultoria em construção civil até entrega de materiais no local da obra. Realizamos cortes e personalizações de materiais, locação de equipamentos e suporte técnico, assegurando que cada etapa da sua construção seja realizada com precisão e tranquilidade.</p>
+            </div>
+
+            <article class="textmedia">
+                <div class="textcontent">
+                    <img src="../icones/prediolaranja.webp" alt="">
+                    <h2>Construções comerciais</h2>
+                    <p>Realizamos construções comerciais de pequeno a grande porte, como lojas, escritórios e centros comerciais, com planejamento detalhado e execução eficiente. Cada projeto é desenvolvido visando funcionalidade, segurança e atendimento às normas técnicas vigentes.</p><br>
+                    <p>Nossa equipe utiliza materiais de alta qualidade e técnicas modernas para entregar espaços comerciais duráveis e esteticamente agradáveis. Atuamos com compromisso, pontualidade e acompanhamento completo, garantindo a satisfação de nossos clientes em todas as etapas da obra.</p>
+                </div>
+                <div class="mediaimg">
+                    <img src="../imagens/serviços/construcoescomerciais.avif" alt="">
+                </div>
+            </article>
+
+            <article class="mediatext">
+                <div class="mediaimg">
+                    <img src="../imagens/serviços/construcoesresidenciais.avif" alt="">
+                </div>
+                <div class="textcontent">
+                    <img src="../icones/casalaranja.png" alt="">
+                    <h2>Construções residenciais</h2>
+                    <p>Executamos construções residenciais de todos os portes, desde casas individuais até condomínios, garantindo projetos planejados com segurança, conforto e qualidade. Atuamos em cada etapa, desde o planejamento até a entrega final, respeitando prazos e normas técnicas.</p><br>
+                    <p>Utilizamos materiais de alta qualidade, técnicas modernas e profissionais experientes para transformar cada projeto em um lar funcional e esteticamente agradável. Nosso foco é atender às necessidades e expectativas de cada cliente, proporcionando confiança e satisfação em todas as etapas da obra.</p>
+                </div>
+            </article>
+
+            <article class="textmedia">
+                <div class="textcontent">
+                    <img src="../icones/planta.png" alt="">
+                    <h2>Pré-construção</h2>
+                    <p>Na fase de pré-construção, planejamos cada detalhe do projeto para garantir eficiência e minimizar riscos. Realizamos estudos de viabilidade, levantamento de custos, análise de materiais e cronogramas detalhados, preparando o terreno para uma execução segura e organizada.</p><br>
+                    <p>Nosso objetivo é antecipar desafios, otimizar recursos e alinhar expectativas com o cliente. Com uma gestão cuidadosa desde o início, asseguramos que a obra siga conforme planejado, evitando atrasos e garantindo qualidade em todas as etapas futuras.</p>
+                </div>
+                <div class="mediaimg">
+                    <img src="../imagens/serviços/preconstrucao.avif" alt="">
+                </div>
+            </article>
+
+            <article class="mediatext">
+                <div class="mediaimg">
+                    <img src="../imagens/serviços/projetosespeciais.avif" alt="">
+                </div>
+                <div class="textcontent">
+                    <img src="../icones/guindaste.webp" alt="">
+                    <h2>Projetos especiais</h2>
+                    <p>Desenvolvemos projetos especiais personalizados para atender às necessidades únicas de cada cliente, incluindo construções diferenciadas, adaptações arquitetônicas e soluções inovadoras. Cada projeto é planejado cuidadosamente, garantindo funcionalidade, estética e segurança.</p><br>
+                    <p>Nossa equipe combina experiência, tecnologia e criatividade para executar obras complexas com precisão. Trabalhamos com materiais de alta qualidade e técnicas avançadas, sempre respeitando prazos e normas técnicas, para entregar resultados que superem as expectativas.</p>
+                </div>
+            </article>
+
+            <article class="textmedia">
+                <div class="textcontent">
+                    <img src="../icones/trabalhador.png" alt="">
+                    <h2>Gestão do canteiro</h2>
+                    <p>A gestão do canteiro de obras garante que cada etapa do projeto seja organizada, segura e eficiente. Nossa equipe supervisiona o fluxo de materiais, equipamentos e pessoal, evitando atrasos e desperdícios, e garantindo que a obra siga o cronograma planejado.</p><br>
+                    <p>Com foco em qualidade e segurança, coordenamos a logística, o armazenamento de materiais e a execução das tarefas, sempre seguindo normas técnicas e boas práticas de engenharia. Nosso objetivo é otimizar recursos e entregar resultados confiáveis e dentro do prazo estipulado.</p>
+                </div>
+                <div class="mediaimg">
+                    <img src="../imagens/serviços/gestaodocanteiro.avif" alt="">
+                </div>
+            </article>
+
+            <article class="mediatext">
+                <div class="mediaimg">
+                    <img src="../imagens/serviços/construcoesinfraestruturais.avif" alt="">
+                </div>
+                <div class="textcontent">
+                    <img src="../icones/guindaste.webp" alt="">
+                    <h2>Construções infraestruturais</h2>
+                    <p>Nossa equipe especializada em construções infraestruturais realiza projetos de grande porte, como estradas, pontes, redes de água e saneamento. Atuamos com planejamento detalhado, garantindo eficiência, segurança e conformidade com todas as normas técnicas em cada etapa da obra.</p><br>
+                    <p>Utilizamos materiais de alta qualidade, tecnologia avançada e métodos modernos de execução para entregar resultados duradouros e confiáveis. Nosso objetivo é atender às necessidades de cada cliente, sempre com profissionalismo, inovação e responsabilidade ambiental.</p>
+                </div>
+            </article>
+            <article class="textmedia">
+                <div class="textcontent">
+                    <img src="../icones/engrenagens.png" alt="">
+                    <h2>Engenharia civil</h2>
+                    <p>Nossa equipe de engenharia civil oferece soluções completas para projetos residenciais, comerciais e industriais. Atuamos desde o planejamento até a execução das obras, garantindo segurança, qualidade e cumprimento dos prazos em todas as etapas do seu projeto.</p><br>
+                    <p>Trabalhamos com profissionais experientes, materiais de alta qualidade e equipamentos modernos. Além de executar obras de qualquer porte, oferecemos consultoria técnica, gerenciamento de obras, reformas e manutenção, sempre com foco em eficiência, inovação e sustentabilidade.</p>
+                </div>
+                <div class="mediaimg">
+                    <img src="../imagens/serviços/engenhariacivil.avif" alt="">
+                </div>
+            </article>
+        </section>
+    </main>
+      <script>
+    const menuBtn = document.getElementById("menubtn");
+    const Menu = document.getElementById("menu");
+
+    menuBtn.addEventListener("click", () => {
+      menuBtn.classList.toggle("active");
+      sideMenu.classList.toggle("active");
+    });
+
+    function clickNav() {
+      const menu = document.getElementById("menu");
+
+      if (menu.style.display == "block") {
+        menu.style.display = "none";
+      } else {
+        menu.style.display = "block";
+      }
+    }
+  </script>
+  </body>

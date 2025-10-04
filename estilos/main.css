@@ -10,7 +10,7 @@
 
     /* FONTES: */
         --Fonte-principal: "Archivo Black", sans-serif;
-        --Fonte-conteudo: "Opens Sans", sans-serif;
+        --Fonte-conteudo: "Open Sans", sans-serif;
 }
 
 * {
@@ -20,12 +20,11 @@
     list-style: none;
     text-decoration: none;
     color: black;
-    font: normal normal 1em var(--Fonte-conteudo);
 }
 
 body, html {
-    width: 100vw;
-    height: 100%;
+    width: 100%;
+    min-height: 100%;
     background-color: rgb(128, 128, 128);
     scroll-behavior: smooth;
     overflow-x: hidden;
@@ -39,15 +38,15 @@ header {
   align-items: flex-start;
   width: 100vw;
   height: 100vh;
-  background: green url(../icones/caged.png) center / cover no-repeat fixed;
-  object-fit: cover;
+  background: green url(../icones/caged.png) center / cover no-repeat fixed
 }
 
 /* Botão home */
 
     div.bottonconstruction {
-      position: relative;
+      position: absolute;
       left: 5%;
+      top: 2%;
       transform: translateY(10%);
       display: flex;
       align-items: center;
@@ -122,11 +121,6 @@ header {
       z-index: 1000;
       overflow: hidden;
     }
-
-    .menu.active {
-      transform: translateY(0);
-    }
-
     .menu ul {
      margin-top: 10%;
       display: flex;
@@ -145,7 +139,7 @@ header {
     #ligar {
       background-color: var(--Cor-secundaria);
       padding: 1.2rem 5rem;
-      font-weight: 100;
+      font-weight: 500;
       font-size: 1em;
       color: black;
     }
@@ -262,16 +256,13 @@ div#leiamais > a{
   color: black;
 }
 
-
 section {
   background-color: white;
-  width: 100%;
-  height: 100dvh;
+  
 }
 
 section h2 {
   font: italic bold 1.5em var(--Fonte-conteudo);
-  
   padding-top: 1rem;
   padding-bottom: 1.5rem;
 }
@@ -335,7 +326,7 @@ section#Infraestrutural {
 
 
 section#Quemsomos {
-  min-height: 1000px;
+  min-height: 100dvh;
   width: 100vw;
   padding: 1rem;
   background: black url(../imagens/home/qmsomosnos.avif) center / cover no-repeat scroll;
@@ -343,7 +334,7 @@ section#Quemsomos {
 }
 
 .conteinerqmsomos {
-  height: 100vh;
+  height: 100%;
   width: 100%;
 }
 
@@ -372,7 +363,7 @@ div.containertitle > p {
   color: whitesmoke;
 }
 
-/*========== =cards ============ */
+/*=========== cards ============ */
 
 div.infocontainer {
   display: flex;
@@ -409,4 +400,54 @@ div.infocontainer {
   font-weight: 100;
   margin: 0;
   margin-bottom: 10px;
+}
+
+/*================================*/
+
+section#Nossosservicos {
+  min-height: 1500px;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: rgb(236, 236, 236);
+}
+
+section#Nossosservicos > div > img {
+  width: 30%;
+}
+
+section#Nossosservicos > div > p {
+  margin: 0;
+  font-weight: normal;
+  font-size: 1em;
+}
+
+section#Nossosservicos > div {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 1rem;
+  height: 250px;
+  width: 100%;
+  background-color: white;
+}
+
+div.containertitle2 {
+  border: 3px dashed lawngreen;
+  height: 500px;
+  padding: 10rem;
+}
+
+.containertitle2 > h2 {
+  color: black;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.containertitle2 > h3 {
+  font-size: 1.5em;
+  color: var(--Cor-secundaria);
+  font-weight: bold;
 }

@@ -9,3 +9,38 @@ FONTES:
 </style>
 --Fonte-principal: "Archivo Black";
 --Fonte-conteudo: "Opens Sans";
+
+
+
+<footer>
+<hr>
+<h2>BuildUP</h2>
+<p>Construções</p>
+
+<ul>
+    <h2>Sede</h2>
+    <li>Rua Prates, 194,</li>
+    <li>Bom Retiro, São Paulo -</li>
+    <li>SP, 01121-000</li><br>
+    <li>(11) 3456-7890</li>
+    <li>info@meusite.com</li>
+</ul>
+<ul>
+    <h2>Redes Sociais</h2>
+    <li><a href="">Git hub</a></li>
+    <li><a href="">Instagram</a></li>
+    <li><a href="">Linkedin</a></li>
+</ul>
+<ul>
+    <h2>Perguntas</h2>
+    <li>Para qualquer pergunta,</li>
+    <li>dúvida ou comentário,</li>
+    <li>ligue para (11) 3456-7890</li>
+</ul>
+<div class="botaogeral"><a href="#">Fale conosco</a></div>
+<div class="termosagradecimento">
+    <p>Política de Cookies</p>
+    <p>Política de Privacidade</p>
+    <p>© 2035 por MCR Construções.<br>Orgulhosamente criado com Wix.com</p>
+</div>
+</footer>

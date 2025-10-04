@@ -23,12 +23,15 @@
 }
 
 body, html {
-    width: 100%;
-    min-height: 100%;
+    width: 100vw;
+    min-height: 100vh;
     background-color: rgb(128, 128, 128);
     scroll-behavior: smooth;
     overflow-x: hidden;
-    font: normal normal 1em var(--Fonte-conteudo);
+    font-family: "Open Sans", sans-serif;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: normal;
 }
 
 header {
@@ -215,7 +218,7 @@ main {
   display: flex;
   flex-flow: column nowrap;
   background-color: red;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
 }
 
@@ -255,75 +258,6 @@ div#leiamais > a{
   padding: 1.2rem 2.5rem;
   color: black;
 }
-
-section {
-  background-color: white;
-  
-}
-
-section h2 {
-  font: italic bold 1.5em var(--Fonte-conteudo);
-  padding-top: 1rem;
-  padding-bottom: 1.5rem;
-}
-
-section p {
-  font-size: 0.9em;
-  font-weight: 200;
-  line-height: 2.5rem;
-  max-width: 450px;
-  display: block;
-  margin: auto;
-  margin-bottom: 4rem;
-}
-
-div.content {
-  height: 100%;
-  width: 100%;
-  padding: 2rem 5rem;
-  background-color: white;
- 
-}
-/* CONFIG SECTION ="COMERCIAL"*/
-
-section#Comercial {
-  width: 100%;
-  height: 100%;
-  margin-bottom: 92%;
-}
-
-section#Infraestrutural {
-  width: 100%;
-  height: 100%;
-  margin-bottom: 100%;
-}
-
-.comercialimg > img, .infraestruturalimg > img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center left;
-  display: block;
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 section#Quemsomos {
   min-height: 100dvh;
@@ -405,7 +339,7 @@ div.infocontainer {
 /*================================*/
 
 section#Nossosservicos {
-  min-height: 1500px;
+  min-height: 100dvh;
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -418,26 +352,29 @@ section#Nossosservicos > div > img {
 }
 
 section#Nossosservicos > div > p {
-  margin: 0;
+  margin: 1rem 0 0 0;
   font-weight: normal;
-  font-size: 1em;
+  font-size: 1.2em;
 }
 
-section#Nossosservicos > div {
+section#Nossosservicos > div:not(.containertitle2) {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: flex-start;
   padding: 1rem;
-  height: 250px;
+  height: 200px;
   width: 100%;
   background-color: white;
 }
 
 div.containertitle2 {
-  border: 3px dashed lawngreen;
-  height: 500px;
-  padding: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  min-height: 60dvh;
+  padding: 1rem;
+  background-color: rgb(236, 236, 236);
 }
 
 .containertitle2 > h2 {
@@ -447,7 +384,71 @@ div.containertitle2 {
 }
 
 .containertitle2 > h3 {
-  font-size: 1.5em;
+  font-size: 1.7em;
   color: var(--Cor-secundaria);
   font-weight: bold;
 }
+
+.containertitle2 > p {
+  align-self: ;
+  font-size: 1em;
+  font-weight: 100;
+}
+
+.containertitle2 > div.botaogeral {
+  margin-top: 2rem;
+}
+
+
+footer {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 2rem;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: rgb(236, 236, 236);
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+}
+
+footer > hr {
+  height: 2px;
+  width: 90vw;
+  margin: auto;
+  background-color: #000000;
+}
+
+footer > ul > h2 {
+  font-size: 1.5em;
+  font-style: normal;
+  margin-bottom: 0.5rem;
+}
+
+footer > ul > li, div.termosagradecimento > p {
+  line-height: 2rem;
+  font-size: 0.9em;
+  font-weight: 100;
+}
+
+div.botaogeral {
+  margin: 1rem 0 1rem 0;
+}
+
+div.botaogeral > a {
+  background-color: #FD5521;
+  padding: 1.2rem 2rem;
+  color: black;
+}
+
+div.botaogeral > a:hover, div.botaogeral > a:active {
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+  transition: all 0.5s ease;
+}
+
+div.termosagradecimento p > a {
+  text-decoration: underline;
+}
+

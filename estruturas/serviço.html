@@ -35,6 +35,7 @@
         div.contenttitleservico {
             margin-top: 15vh;
             padding: 1rem;
+            padding-bottom: 2rem;
         }
 
         .contenttitleservico > h2 {
@@ -53,6 +54,8 @@
 
         .contenttitleservico > p {
             margin: 0;
+            font-weight: 100;
+            font-size: 1em;
         }
 
         main {
@@ -73,18 +76,18 @@
         }
 
         div.textcontent > img {
+            margin-top: 2rem;
             max-width: 35%;
         }
 
         div.textcontent h2{
             padding-top: 0;
+            padding-bottom: 1rem;
             font-size: 1.5em;
         }
 
         div.textcontent > p {
-            text-align: justify;
             margin: 0;
-            margin: auto;
         }
 
         article.mediatext {
@@ -92,16 +95,18 @@
             flex-flow: column-reverse nowrap;
         }
 
+        article.textmedia {
+            display: flex;
+            flex-direction: column;
+        }
+
         div.mediaimg > img {
             width: 100%;
-            height: 250px;
+            height: 300px;
             object-fit: cover;
             object-position: center;
         }
 
-        footer {
-            height: auto;
-        }
     </style>
   </head>
   <body onresize="mudouTamanho()">
@@ -114,7 +119,7 @@
       <nav class="menu" id="menu">
         <ul>
           <li><a href="#" rel="next">Serviços</a></li>
-          <li><a href="#" rel="next">Projetos</a></li>
+          <li><a href="projetos.html" rel="next">Projetos</a></li>
           <li><a href="#" rel="next">Sobre</a></li>
           <li><a href="#" rel="next">Carreiras</a></li>
           <li><a href="#" rel="next">Contato</a></li>
